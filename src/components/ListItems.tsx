@@ -1,6 +1,5 @@
-
 export const ListItems = ({ items }) => {
   return (
-    items.map(d => (<li key={d.id}>{d.name}</li>))
+    items.map(item => (<li key={item.url}>{item.name}{item.title}</li>))
   );
 };
