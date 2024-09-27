@@ -1,32 +1,40 @@
 import { createBrowserRouter } from "react-router-dom";
+import { Vehicles } from "../pages/Vehicles";
+import { Starships } from "../pages/Starships";
+import { Species } from "../pages/Species";
+import { Planets } from "../pages/Planets";
+import { People } from "../pages/People";
+import { Films } from "../pages/Films";
+import { Home } from "../pages/Home";
+
 
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: <div>Welcome to the Star Wars API App!</div>,
+    element: <Home />,
   },
   {
     path: "/films",
-    element: <div>Films</div>,
+    element: <Films />,
   },
   {
     path: "/people",
-    element: <div>People</div>,
+    element: <People />,
   },
   {
     path: "/planets",
-    element: <div>Planets</div>,
+    element: <Planets />,
   },
   {
     path: "/species",
-    element: <div>Species</div>,
+    element: <Species />,
   },
   {
     path: "/starships",
-    element: <div>Starships</div>,
+    element: <Starships />,
   },
   {
     path: "/vehicles",
-    element: <div>Vehicles</div>,
+    element: <Vehicles />,
   },
 ]);
