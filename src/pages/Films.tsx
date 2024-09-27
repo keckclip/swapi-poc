@@ -1,5 +1,8 @@
-
+import { ListView } from "../components/ListView";
 
 export const Films = () => {
-  return <div>Films</div>;
+  const baseUrl = "https://swapi.dev/api/films/";
+  const pageTitle = "Films";
+
+  return <ListView baseUrl={baseUrl} pageTitle={pageTitle} />;
 };
