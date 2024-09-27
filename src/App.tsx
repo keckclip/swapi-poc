@@ -1,5 +1,7 @@
 import "./App.css";
 
+import MainRouter  from "./router/MainRouter";
+
 function App() {
   return (
     <>
@@ -7,15 +9,29 @@ function App() {
       <nav>
         Menu
         <ul>
-          <li>Films</li>
-          <li>People</li>
-          <li>Planets</li>
-          <li>Species</li>
-          <li>Starships</li>
-          <li>Vehicles</li>
+          <li>
+            <a href="/films">Films</a>
+          </li>
+          <li>
+            <a href="/people">People</a>
+          </li>
+          <li>
+            <a href="/planets">Planets</a>
+          </li>
+          <li>
+            <a href="/species">Species</a>
+          </li>
+          <li>
+            <a href="/starships">Starships</a>
+          </li>
+          <li>
+            <a href="/vehicles">Vehicles</a>
+          </li>
         </ul>
       </nav>
-      <main>content</main>
+      <main>
+        <MainRouter />
+      </main>
       <footer>footer</footer>
     </>
   );
