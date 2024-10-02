@@ -6,7 +6,7 @@ export const useFetch = (url: string) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(url);
+      const response = await fetch(url, { cache: "force-cache" });
       const data = await response.json();
       setData(data);
       setLoading(false);
