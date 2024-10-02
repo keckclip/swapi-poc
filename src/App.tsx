@@ -1,7 +1,6 @@
 import "./App.css";
 import { Menu } from "./components/Menu";
-
-import MainRouter from "./router/MainRouter";
+import { MainRouter } from "./router/";
 
 function App() {
   return (

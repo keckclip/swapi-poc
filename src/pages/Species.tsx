@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { ShowView } from "../components/ShowView";
+import { ShowView } from "../components/";
 
   export const Species = () => {
   const { id = "" } = useParams();
