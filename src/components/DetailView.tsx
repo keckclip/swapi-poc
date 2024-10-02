@@ -1,5 +1,5 @@
 import { useFetch } from "../hooks/useFetch";
-import { ShowAvailableStats } from "./ShowAvailableStats";
+import { Loader, ShowAvailableStats } from "./";
 
 type DetailViewProps = {
   url: string;
@@ -14,7 +14,7 @@ export const DetailView: DetailViewType = ({ url, pageTitle }) => {
   const { data, loading } = useFetch(url);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   const { name, title } = data;
@@ -30,3 +30,5 @@ export const DetailView: DetailViewType = ({ url, pageTitle }) => {
     </div>
   );
 };
+
+

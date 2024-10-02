@@ -4,3 +4,4 @@ export { ListView } from "./ListView";
 export { ShowAvailableStats } from "./ShowAvailableStats";
 export { ShowView } from "./ShowView";
 export { Menu } from "./Menu";
+export { Loader } from "./Loader";
