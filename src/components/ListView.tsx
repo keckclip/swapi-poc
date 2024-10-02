@@ -23,7 +23,7 @@ export const ListView = ({ baseUrl, pageTitle }: { baseUrl: string; pageTitle: s
   return (
     <>
       <div>
-        {pageTitle}
+        <h1>{pageTitle}</h1>
         <ListItems items={results} />
       </div>
       <button disabled={!previous} onClick={onPrevious}>

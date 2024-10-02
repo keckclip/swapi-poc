@@ -14,27 +14,27 @@ export const routes = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/films",
+    path: "/films/:id?",
     element: <Films />,
   },
   {
-    path: "/people",
+    path: "/people/:id?",
     element: <People />,
   },
   {
-    path: "/planets",
+    path: "/planets/:id?",
     element: <Planets />,
   },
   {
-    path: "/species",
+    path: "/species/:id?",
     element: <Species />,
   },
   {
-    path: "/starships",
+    path: "/starships/:id?",
     element: <Starships />,
   },
   {
-    path: "/vehicles",
+    path: "/vehicles/:id?",
     element: <Vehicles />,
   },
 ]);

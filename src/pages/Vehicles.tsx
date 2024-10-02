@@ -1,8 +1,10 @@
-import { ListView } from "../components/ListView";
+import { useParams } from "react-router-dom";
+import { ShowView } from "../components/ShowView";
 
 export const Vehicles = () => {
+  const { id = "" } = useParams();
   const baseUrl = "https://swapi.dev/api/vehicles/";
   const pageTitle = "Vehicles";
 
-  return <ListView baseUrl={baseUrl} pageTitle={pageTitle} />;
+  return <ShowView id={id} baseUrl={baseUrl} pageTitle={pageTitle}  />
 };
